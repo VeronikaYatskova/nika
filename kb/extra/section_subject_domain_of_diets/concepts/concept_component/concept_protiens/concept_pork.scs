@@ -1,0 +1,34 @@
+concept_pork
+<- sc_node_class;
+=> nrel_main_idtf:
+	[свинина]
+	(* <- lang_ru;; *);
+	[pork]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (свинина)]
+        (* <- lang_ru;; *);
+        [Def. (pork)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    []
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    []
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_protiens
+            };;
+	*);;

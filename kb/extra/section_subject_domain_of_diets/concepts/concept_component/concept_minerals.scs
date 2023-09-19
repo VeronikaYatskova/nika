@@ -1,0 +1,35 @@
+concept_minerals
+<- sc_node_class;
+=> nrel_main_idtf:
+	[минералы]
+	(* <- lang_ru;; *);
+	[minerals]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (минералы)]
+        (* <- lang_ru;; *);
+        [Def. (minerals)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Минералы - днородная по составу и строению часть горных пород, руд, метеоритов, являющаяся естественным продуктом геологических процессов и представляющая собой химическое соединение или химический элемент.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Minerals are a part of rocks, ores, meteorites, homogeneous in composition and structure, which is a natural product of geological processes and is a chemical compound or chemical element.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet;
+                concept_component
+            };;
+	*);;

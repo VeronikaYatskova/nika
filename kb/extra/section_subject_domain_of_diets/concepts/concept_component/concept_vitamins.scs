@@ -1,0 +1,35 @@
+concept_vitamins
+<- sc_node_class;
+=> nrel_main_idtf:
+	[витамины]
+	(* <- lang_ru;; *);
+	[vitamins]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (витамины)]
+        (* <- lang_ru;; *);
+        [Def. (vitamins)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Витамины - группа органических соединений разнообразной химической природы, объединённая по признаку абсолютной необходимости их для гетеротрофного организма в качестве составной части пищи.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Vitamins are a group of organic compounds of diverse chemical nature, united on the basis of their absolute necessity for a heterotrophic organism as an integral part of food.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet;
+                concept_component
+            };;
+	*);;

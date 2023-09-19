@@ -1,0 +1,34 @@
+concept_aromatic_diet
+<- sc_node_class;
+=> nrel_main_idtf:
+	[ароматическая диета]
+	(* <- lang_ru;; *);
+	[aromatic diet]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (ароматическая диета)]
+        (* <- lang_ru;; *);
+        [Def. (aromatic diet)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Ароматерапевт Алан Хирш обратил внимание, что некоторые запахи возбуждают аппетит, а некоторые — снижают. Его рекомендации по поводу самой легкой диеты для похудения просты: перед едой и каждый раз, когда возникает чувство голода, нужно вдыхать эфирные масла мяты, лаванды или розы, или же понюхать яблоко или банан.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Aromatherapist Alan Hirsch noticed that some smells stimulate the appetite, while others reduce it. His recommendations for the easiest diet for weight loss are simple: before meals and every time you feel hungry, you need to inhale the essential oils of mint, lavender or rose, or smell an apple or banana.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet
+            };;
+	*);;

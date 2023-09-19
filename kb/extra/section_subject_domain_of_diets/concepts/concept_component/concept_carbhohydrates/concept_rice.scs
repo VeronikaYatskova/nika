@@ -1,0 +1,34 @@
+concept_rice
+<- sc_node_class;
+=> nrel_main_idtf:
+	[рис]
+	(* <- lang_ru;; *);
+	[rice]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (рис)]
+        (* <- lang_ru;; *);
+        [Def. (rice)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Рис — это съедобное крахмалистое зерно и травянистое растение (семейство Poaceae), из которого он производится.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Rice is edible starchy cereal grain and the grass plant (family Poaceae) by which it is produced.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_carbhohydrates
+            };;
+	*);;

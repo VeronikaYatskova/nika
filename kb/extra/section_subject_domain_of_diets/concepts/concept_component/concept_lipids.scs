@@ -1,0 +1,35 @@
+concept_lipids
+<- sc_node_class;
+=> nrel_main_idtf:
+	[липиды]
+	(* <- lang_ru;; *);
+	[lipids]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (липиды)]
+        (* <- lang_ru;; *);
+        [Def. (lipids)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Липиды - разнообразная по строению группа биоорганических веществ, с общим свойством — растворимостью в неполярных растворителях.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Lyrids are a structurally diverse group of bioorganic substances with a common property - solubility in non-polar solvents.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet;
+                concept_component
+            };;
+	*);;

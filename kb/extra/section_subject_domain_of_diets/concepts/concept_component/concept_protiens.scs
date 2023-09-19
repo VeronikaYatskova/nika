@@ -1,0 +1,47 @@
+
+concept_protiens
+<- sc_node_class;
+=> nrel_main_idtf:
+	[протеин]
+	(* <- lang_ru;; *);
+	[protien]
+	(* <- lang_en;; *);
+<= nrel_subdividing:
+{
+    concept_beef;
+    concept_chicken;
+    concept_eggs
+};
+<= nrel_subdividing:
+{
+    concept_fish;
+    concept_pork
+};
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (протеин)]
+        (* <- lang_ru;; *);
+        [Def. (protien)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Протеин - высокомолекулярные органические вещества, состоящие из альфа-аминокислот, соединённых в цепочку пептидной связью.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Protein is a high-molecular organic substance consisting of alpha amino acids connected in a chain by a peptide bond.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet;
+                concept_component
+            };;
+	*);;

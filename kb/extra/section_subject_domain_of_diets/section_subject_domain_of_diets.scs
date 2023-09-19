@@ -1,0 +1,264 @@
+section_subject_domain_of_diets
+=> nrel_main_idtf:
+    [Раздел. Предметная область диет] 
+    (* <- lang_ru;; *);
+    [Section. Subject domain of diets]
+    (* <- lang_en;; *);
+<- sc_node_class;
+<- atomic_section;;
+
+subject_domain_of_diets
+<- structure;
+<- subject_domain;
+=> nrel_main_idtf:
+    [Предметная область диет] 
+    (* <- lang_ru;; *);
+    [Subject domain of diets] 
+    (* <- lang_en;; *);
+
+-> rrel_maximum_studied_object_class:
+    concept_diet;
+-> rrel_explored_relation:
+	nrel_author;
+    nrel_artist;
+    nrel_publisher;
+    nrel_annotation;
+    rrel_components;
+    nrel_player_age;
+    nrel_player_amount;
+    nrel_recomended_player_amount;
+    nrel_rule_learning_time;
+    nrel_game_time;
+    nrel_game_rules;
+    nrel_creation_year;
+    nrel_weight;
+    nrel_box_size;
+    nrel_card_size;
+    nrel_game_cost;
+    nrel_component_material;
+    nrel_player_rating;
+    nrel_core_mechanics;
+    nrel_revision_number;
+    nrel_existing_extensions;
+    rrel_awards;
+    nrel_game_theme;
+    nrel_component_count;
+-> rrel_not_maximum_studied_object_class:
+    
+    concept_aromatic_diet;
+    concept_intermittent_fasting_diet;
+    concept_pca_diet;
+    concept_protein_diet;
+    concept_separate_nutrition_diet;
+
+    concept_component;
+    concept_carbhohydrates;
+    concept_lipids;
+    concept_minerals;
+    concept_protiens;
+    concept_vitamins;
+
+    concept_blueberries;
+    concept_oatmeal;
+    concept_rice;
+    concept_strawberries;
+    concept_sweet_potato;
+
+    concept_beef;
+    concept_chicken;
+    concept_eggs;
+    concept_fish;
+    concept_pork;
+
+    concept_creature_card;
+    concept_token;
+    concept_character_figurine;
+    concept_rules;
+    concept_dice;
+    concept_scenario;
+    concept_accessory;
+    concept_protector;
+    concept_poach;
+    concept_mechanics;
+    concept_award;;
+
+rrel_key_sc_element -> (section_subject_domain_of_diets -> subject_domain_of_diets)
+(*
+	=> nrel_key_sc_element_order: (subject_domain_of_diets -> concept_diet)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_genre)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_aromatic_diet)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_intermittent_fasting_diet)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_pca_diet)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_separate_nutrition_diet)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_protein_diet)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_component)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_carbhohydrates)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_lipids)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_minerals)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_protiens)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_vitamins)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_blueberries)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_oatmeal)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_rice)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_strawberries)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_sweet_potato)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_chicken)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_beef)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_component)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_eggs)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_fish)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_pork)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_creature_card)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_token)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_character_figurine)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_rules)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_dice)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_scenario)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_accessory)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_protector)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_poach)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_mechanics)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_award)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_author)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_artist)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_publisher)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_annotation)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> rrel_components)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_player_age)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_player_amount)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_recomended_player_amount)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_rule_learning_time)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_game_time)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_game_rules)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_creation_year)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_weight)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_box_size)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_card_size)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_component_material)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_game_cost)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_player_rating)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_core_mechanics)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_revision_number)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_existing_extensions)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> rrel_awards)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_game_theme)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_component_count)
+(*
+    <- rrel_key_sc_element;;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;

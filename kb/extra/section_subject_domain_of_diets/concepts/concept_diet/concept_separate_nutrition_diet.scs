@@ -1,0 +1,34 @@
+concept_separate_nutrition_diet
+<- sc_node_class;
+=> nrel_main_idtf:
+	[раздельное питание по Шелтону]
+	(* <- lang_ru;; *);
+	[separate nutrition according to Shelton]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (раздельное питание по Шелтону)]
+        (* <- lang_ru;; *);
+        [Def. (separate nutrition according to Shelton)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Согласно концепции раздельного питания Г. Шелтона, раздельное питание исключает следующие сочетания продуктов: белки и крахмал, белки и жиры, белки и сахара, крахмал и сахара, кислые и сладкие фрукты, кислые продукты с белками, кислые продукты с крахмалом.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [According to the concept of separate nutrition by G. Shelton, separate nutrition excludes the following combinations of products: proteins and starch, proteins and fats, proteins and sugars, starch and sugars, sour and sweet fruits, sour foods with proteins, sour foods with starch.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet
+            };;
+	*);;

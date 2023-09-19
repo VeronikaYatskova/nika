@@ -1,0 +1,34 @@
+concept_blueberries
+<- sc_node_class;
+=> nrel_main_idtf:
+	[черника]
+	(* <- lang_ru;; *);
+	[blueberries]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (черника)]
+        (* <- lang_ru;; *);
+        [Def. (blueberries)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Черника - мелкий полукустарник с круглыми чёрными сладкими ягодами, а также ягоды его.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Blueberry is a small subshrub with round black sweet berries, as well as its berries.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_carbhohydrates
+            };;
+	*);;

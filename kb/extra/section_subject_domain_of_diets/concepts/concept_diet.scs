@@ -1,0 +1,41 @@
+concept_diet
+<- sc_node_class;
+=> nrel_main_idtf:
+	[диета]
+	(* <- lang_ru;; *);
+	[diet]
+	(* <- lang_en;; *);
+=> nrel_subdividing:
+{
+    concept_protein_diet;
+    concept_separate_nutrition_diet;
+    concept_aromatic_diet
+};
+=> nrel_subdividing:
+{
+    concept_pca_diet;
+    concept_intermittent_fasting_diet
+};
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (диета)]
+        (* <- lang_ru;; *);
+        [Def. (diet)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Диета - это план питания, при котором человек ест меньше еды или только определенные виды пищи, потому что хочет похудеть или по медицинским причинам.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Diet is an eating plan in which someone eats less food, or only particular types of food, because they want to become thinner or for medical reasons.]
+                    (* <- lang_en;; *);;
+            *);;
+	*);;
