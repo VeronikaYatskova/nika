@@ -1,0 +1,46 @@
+concept_fats
+<- sc_node_class;
+=> nrel_main_idtf:
+	[жиры]
+	(* <- lang_ru;; *);
+	[fats]
+	(* <- lang_en;; *);
+<= nrel_subdividing:
+{
+    concept_blueberries;
+    concept_oatmeal;
+    concept_rice
+};
+<= nrel_subdividing:
+{
+    concept_strawberries;
+    concept_sweet_potato
+};
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (жиры)]
+        (* <- lang_ru;; *);
+        [Def. (fats)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Жиры - органические вещества, содержащие карбонильную группу и несколько гидроксильных групп.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Fats are organic substances containing a carbonyl group and several hydroxyl groups.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet;
+                concept_component
+            };;
+	*);;

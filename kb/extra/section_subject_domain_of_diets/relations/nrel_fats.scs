@@ -1,0 +1,54 @@
+nrel_fats
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество жиров*]
+	(* <- lang_ru;; *);
+	[count of fats*]
+	(* <- lang_en;; *);
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_first_domain: concept_fats;
+=> nrel_second_domain: sc_link;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_fats;
+			sc_link
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+    	[Опр. (количество жиров*)]
+    	(* <- lang_ru;; *);
+    	[Def. (fats count*)]
+    	(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[количество жиров* - это ориентированное бинарное отношение, связывающее углеводы с sc-ссылкой, в которой описано их количество.]
+			(* <- lang_ru;;	*);;
+		*);
+		...
+		(*
+		-> rrel_example:
+	  		[fats count* is a oriented binary relation that links fats to an sc reference that describes their quantity.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+        {
+            binary_relation;
+			oriented_relation;
+			concept_fats;
+            sc_link
+        };;
+    *);;

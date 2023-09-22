@@ -1,45 +1,34 @@
-concept_component
+concept_award
 <- sc_node_class;
 => nrel_main_idtf:
-	[компонент]
+	[награда]
 	(* <- lang_ru;; *);
-	[component]
+	[awards]
 	(* <- lang_en;; *);
-=> nrel_subdividing:
-{
-    concept_carbhohydrates;
-    concept_lipids;
-    concept_minerals
-};
-=> nrel_subdividing:
-{
-    concept_protiens;
-    concept_vitamins
-};
 <- rrel_key_sc_element:
 	...
 	(*
         => nrel_main_idtf:
-        [Опр. (компонент)]
+        [Опр. (награда)]
         (* <- lang_ru;; *);
-        [Def. (component)]
+        [Def. (awards)]
         (* <- lang_en;; *);;
         <- definition;;
-        <= nrel_sc_text_translation:
+         <= nrel_sc_text_translation:
             ...
             (*
                 -> rrel_example:
-                    [Компонент - это продукт, который должен присутствовать в диете.]
+                    [Награда - это особый почётный знак, который выдается автору диеты за ее эффективность.]
                     (* <- lang_ru;; *);;
             *);
             ...
             (*
                 -> rrel_example:
-                    [A component is a product that must be present in the diet.]
+                    [An award is a special badge of honor given to a diet author for its efficiency.]
                     (* <- lang_en;; *);;
             *);;
         <= nrel_using_constants:
                 {
                     concept_diet
                 };;
-        *);;
+    *);;

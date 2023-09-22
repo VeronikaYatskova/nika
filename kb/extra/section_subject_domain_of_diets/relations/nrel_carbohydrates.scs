@@ -1,0 +1,54 @@
+nrel_carbohydrates
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество углеводов*]
+	(* <- lang_ru;; *);
+	[count of carbohydrates*]
+	(* <- lang_en;; *);
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_first_domain: concept_carbohydrates;
+=> nrel_second_domain: sc_link;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_carbohydrates;
+			sc_link
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+    	[Опр. (количество углеводов*)]
+    	(* <- lang_ru;; *);
+    	[Def. (carbohydrates count*)]
+    	(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[количество углеводов* - это ориентированное бинарное отношение, связывающее углеводы с sc-ссылкой, в которой описано их количество.]
+			(* <- lang_ru;;	*);;
+		*);
+		...
+		(*
+		-> rrel_example:
+	  		[carbohydrates count* is a oriented binary relation that links carbohydrates to an sc reference that describes their quantity.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+        {
+            binary_relation;
+			oriented_relation;
+			concept_carbohydrates;
+            sc_link
+        };;
+    *);;

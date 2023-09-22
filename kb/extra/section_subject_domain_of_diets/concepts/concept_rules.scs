@@ -1,41 +1,30 @@
-concept_component
+concept_rules
 <- sc_node_class;
 => nrel_main_idtf:
-	[компонент]
+	[правила]
 	(* <- lang_ru;; *);
-	[component]
+	[rules]
 	(* <- lang_en;; *);
-=> nrel_subdividing:
-{
-    concept_carbhohydrates;
-    concept_lipids;
-    concept_minerals
-};
-=> nrel_subdividing:
-{
-    concept_protiens;
-    concept_vitamins
-};
 <- rrel_key_sc_element:
 	...
 	(*
         => nrel_main_idtf:
-        [Опр. (компонент)]
+        [Опр. (правила)]
         (* <- lang_ru;; *);
-        [Def. (component)]
+        [Def. (rules)]
         (* <- lang_en;; *);;
         <- definition;;
         <= nrel_sc_text_translation:
             ...
             (*
                 -> rrel_example:
-                    [Компонент - это продукт, который должен присутствовать в диете.]
+                    [Правила - рекомендации, которые человек должен соблюдать во время диеты.]
                     (* <- lang_ru;; *);;
             *);
             ...
             (*
                 -> rrel_example:
-                    [A component is a product that must be present in the diet.]
+                    [Rules are recommendations that a person must follow during a diet.]
                     (* <- lang_en;; *);;
             *);;
         <= nrel_using_constants:

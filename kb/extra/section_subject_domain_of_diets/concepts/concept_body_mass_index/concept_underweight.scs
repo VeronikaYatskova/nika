@@ -1,0 +1,34 @@
+concept_underweight
+<- sc_node_class;
+=> nrel_main_idtf:
+	[недовес]
+	(* <- lang_ru;; *);
+	[underweight]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (недовес)]
+        (* <- lang_ru;; *);
+        [Def. (underweight)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Недовес - отсутствие должного веса в чём-н. при неправильном взвешивании.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Underweight - lack of proper weight in something. if weighed incorrectly.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_body_mass_index
+            };;
+	*);;

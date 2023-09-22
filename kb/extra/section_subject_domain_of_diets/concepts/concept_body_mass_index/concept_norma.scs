@@ -1,0 +1,34 @@
+concept_norma
+<- sc_node_class;
+=> nrel_main_idtf:
+	[норма]
+	(* <- lang_ru;; *);
+	[norma]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (норма)]
+        (* <- lang_ru;; *);
+        [Def. (norma)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Нормальным считается вес, при котором у человека идеально соблюдены пропорции в определенном возрасте.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [A normal weight is one at which a person has ideal proportions at a certain age.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_body_mass_index
+            };;
+	*);;

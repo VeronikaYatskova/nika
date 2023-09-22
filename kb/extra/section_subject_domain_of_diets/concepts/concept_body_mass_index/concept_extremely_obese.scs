@@ -1,0 +1,34 @@
+concept_extremely_obese
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сильное ожирение]
+	(* <- lang_ru;; *);
+	[extremely obese]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (сильное ожирение)]
+        (* <- lang_ru;; *);
+        [Def. (extremely obese)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Сильное ожирение - результат формирования аномальных или чрезмерных жировых отложений, которые могут наносить вред здоровью.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Extremely obese is the result of the formation of abnormal or excessive fat deposits, which can be harmful to health.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_body_mass_index
+            };;
+	*);;

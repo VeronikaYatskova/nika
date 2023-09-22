@@ -1,0 +1,54 @@
+nrel_proteins
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество белков*]
+	(* <- lang_ru;; *);
+	[count of proteins*]
+	(* <- lang_en;; *);
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_first_domain: concept_proteins;
+=> nrel_second_domain: sc_link;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_proteins;
+			sc_link
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+    	[Опр. (количество белков*)]
+    	(* <- lang_ru;; *);
+    	[Def. (proteins count*)]
+    	(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[количество белков* - это ориентированное бинарное отношение, связывающее белки с sc-ссылкой, в которой описано их количество.]
+			(* <- lang_ru;;	*);;
+		*);
+		...
+		(*
+		-> rrel_example:
+	  		[proteins count* is a oriented binary relation that links proteins to an sc reference that describes their quantity.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+        {
+            binary_relation;
+			oriented_relation;
+			concept_proteins;
+            sc_link
+        };;
+    *);;

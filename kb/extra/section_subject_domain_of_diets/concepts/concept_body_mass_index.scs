@@ -1,0 +1,45 @@
+concept_body_mass_index
+<- sc_node_class;
+=> nrel_main_idtf:
+	[индекс массы тела]
+	(* <- lang_ru;; *);
+	[body mass index]
+	(* <- lang_en;; *);
+=> nrel_subdividing:
+{
+    concept_extremely_obese;
+    concept_norma;
+    concept_obese
+};
+=> nrel_subdividing:
+{
+    concept_overweight;
+    concept_underweight
+};
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (индекс массы тела)]
+        (* <- lang_ru;; *);
+        [Def. (body mass index)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Индекс массы тела - величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым косвенно судить о том, является ли масса недостаточной, нормальной или избыточной.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Body mass index is a value that allows one to assess the degree of correspondence between a person’s mass and his height and thereby indirectly judge whether the mass is insufficient, normal or excessive.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+        {
+            concept_diet
+        };;
+    *);;
