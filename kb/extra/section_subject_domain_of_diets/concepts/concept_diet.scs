@@ -1,5 +1,6 @@
 concept_diet
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[диета]
 	(* <- lang_ru;; *);
@@ -30,7 +31,10 @@ concept_diet
             (*
                 -> rrel_example:
                     [Диета - это план питания, при котором человек ест меньше еды или только определенные виды пищи, потому что хочет похудеть или по медицинским причинам.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_diet;; 
+                    *);;
             *);
             ...
             (*
@@ -39,3 +43,5 @@ concept_diet
                     (* <- lang_en;; *);;
             *);;
 	*);;
+
+    

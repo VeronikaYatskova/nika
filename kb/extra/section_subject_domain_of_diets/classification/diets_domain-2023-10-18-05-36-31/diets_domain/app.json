@@ -1,0 +1,7 @@
+{
+    "version": 20200513,
+    "zip-command": "zip diets_domain.zip diets_domain\/app.json diets_domain\/entities\/*.json diets_domain\/intents\/*.json diets_domain\/traits\/*.json diets_domain\/utterances\/*.json diets_domain\/composer\/*.json",
+    "name": "diets_domain",
+    "lang": "ru",
+    "timezone": "America\/Los_Angeles"
+}

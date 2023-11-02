@@ -1,5 +1,6 @@
 concept_norma
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[норма]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_norma
             (*
                 -> rrel_example:
                     [Нормальным считается вес, при котором у человека идеально соблюдены пропорции в определенном возрасте.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_norma;; 
+               *);;
             *);
             ...
             (*

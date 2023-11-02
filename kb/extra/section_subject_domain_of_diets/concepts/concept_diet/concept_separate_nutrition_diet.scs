@@ -1,5 +1,6 @@
 concept_separate_nutrition_diet
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[раздельное питание по Шелтону]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_separate_nutrition_diet
             (*
                 -> rrel_example:
                     [Согласно концепции раздельного питания Г. Шелтона, раздельное питание исключает следующие сочетания продуктов: белки и крахмал, белки и жиры, белки и сахара, крахмал и сахара, кислые и сладкие фрукты, кислые продукты с белками, кислые продукты с крахмалом.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_separate_nutrition_diet;; 
+               *);;
             *);
             ...
             (*

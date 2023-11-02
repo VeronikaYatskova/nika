@@ -1,5 +1,6 @@
 concept_body_mass_index
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[индекс массы тела]
 	(* <- lang_ru;; *);
@@ -30,7 +31,10 @@ concept_body_mass_index
             (*
                 -> rrel_example:
                     [Индекс массы тела - величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым косвенно судить о том, является ли масса недостаточной, нормальной или избыточной.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_body_mass_index;; 
+                    *);;
             *);
             ...
             (*

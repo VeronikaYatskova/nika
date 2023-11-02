@@ -1,5 +1,6 @@
 concept_chicken
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[курица]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_chicken
             (*
                 -> rrel_example:
                     []
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_chicken;; 
+               *);;
             *);
             ...
             (*

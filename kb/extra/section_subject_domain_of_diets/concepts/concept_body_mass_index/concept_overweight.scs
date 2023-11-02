@@ -1,5 +1,6 @@
 concept_overweight
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[перевес]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_overweight
             (*
                 -> rrel_example:
                     [Перевес - результат формирования аномальных или чрезмерных жировых отложений, которые могут наносить вред здоровью.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_overweight;; 
+               *);;
             *);
             ...
             (*

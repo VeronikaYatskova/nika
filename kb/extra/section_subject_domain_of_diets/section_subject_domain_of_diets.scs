@@ -5,6 +5,7 @@ section_subject_domain_of_diets
     [Section. Subject domain of diets]
     (* <- lang_en;; *);
 <- sc_node_class;
+<- concept_wit_entity;
 <- atomic_section;;
 
 subject_domain_of_diets

@@ -1,6 +1,6 @@
-
 concept_protiens
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[протеин]
 	(* <- lang_ru;; *);
@@ -31,7 +31,10 @@ concept_protiens
             (*
                 -> rrel_example:
                     [Протеин - высокомолекулярные органические вещества, состоящие из альфа-аминокислот, соединённых в цепочку пептидной связью.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_protiens;; 
+               *);;
             *);
             ...
             (*

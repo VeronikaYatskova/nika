@@ -1,5 +1,6 @@
 concept_sweet_potato
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[сладкий картофель]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_sweet_potato
             (*
                 -> rrel_example:
                     []
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_sweet_potato;; 
+               *);;
             *);
             ...
             (*

@@ -1,5 +1,6 @@
 concept_carbhohydrates
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[углеводы]
 	(* <- lang_ru;; *);
@@ -30,7 +31,10 @@ concept_carbhohydrates
             (*
                 -> rrel_example:
                     [Углеводы - органические вещества, содержащие карбонильную группу и несколько гидроксильных групп.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_carbhohydrates;; 
+               *);;
             *);
             ...
             (*

@@ -1,5 +1,6 @@
 concept_underweight
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[недовес]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_underweight
             (*
                 -> rrel_example:
                     [Недовес - отсутствие должного веса в чём-н. при неправильном взвешивании.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_underweight;; 
+               *);;
             *);
             ...
             (*

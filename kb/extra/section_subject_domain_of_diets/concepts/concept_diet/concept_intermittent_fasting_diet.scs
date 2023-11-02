@@ -1,5 +1,6 @@
 concept_intermittent_fasting_diet
 <- sc_node_class;
+<- concept_wit_entity;
 => nrel_main_idtf:
 	[интервальное голодание]
 	(* <- lang_ru;; *);
@@ -19,7 +20,10 @@ concept_intermittent_fasting_diet
             (*
                 -> rrel_example:
                     [Это одна из самых легких диет в домашних условиях, ее суть заключается в том, чтобы меньшую часть суток есть, а большую часть — воздерживаться от еды, т.е. голодать.]
-                    (* <- lang_ru;; *);;
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_intermittent_fasting_diet;; 
+               *);;
             *);
             ...
             (*
