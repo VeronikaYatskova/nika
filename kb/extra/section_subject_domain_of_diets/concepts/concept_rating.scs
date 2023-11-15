@@ -1,0 +1,38 @@
+concept_rating
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[рейтинг]
+	(* <- lang_ru;; *);
+	[rating]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (рейтинг)]
+        (* <- lang_ru;; *);
+        [Def. (rating)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [.]
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_rating;; 
+                    *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+                {
+                    concept_diet
+                };;
+    *);;

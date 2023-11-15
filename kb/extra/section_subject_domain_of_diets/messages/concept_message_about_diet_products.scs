@@ -1,0 +1,36 @@
+concept_message_about_diet_products
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение о типе продуктов, которые преобладают в диете]
+	(* <- lang_ru;; *);
+	[message about types of products that a diet contains]
+	(* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_diet_products];
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (сообщение о типе продуктов, которые преобладают в диете)]
+        (* <- lang_ru;; *);
+        [Def. (message about types of products that a diet contains)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Cообщение о типе продуктов, которые преобладают в диете - атомарное сообщение, в котором говорится об игроках настольной игры.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Message about types of products is an atomic message that tells about the players of a board game.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet
+            };;
+	*);;

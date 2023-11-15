@@ -1,0 +1,36 @@
+concept_message_about_diet_rate
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение о рейтинге диеты]
+	(* <- lang_ru;; *);
+	[message about diet rating]
+	(* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_diet_rate];
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (сообщение о рейтинге диеты)]
+        (* <- lang_ru;; *);
+        [Def. (message about diet rating)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Cообщение о рейтинге диеты - атомарное сообщение, в котором говорится об игроках настольной игры.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Message about diet rating is an atomic message that tells about the players of a board game.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet
+            };;
+	*);;

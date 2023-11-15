@@ -1,0 +1,55 @@
+nrel_risk
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[риск для здоровья*]
+	(* <- lang_ru;; *);
+	[wellness risks*]
+	(* <- lang_en;; *);
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_first_domain: concept_diet;
+=> nrel_second_domain: sc_link;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_diet;
+			sc_link
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+    	[Опр. (риск для здоровья*)]
+    	(* <- lang_ru;; *);
+    	[Def. (wellness risks*)]
+    	(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[риск для здоровья* - это ориентированное бинарное отношение, связывающее настольную игру с sc-ссылкой, в которой находится содержание правил диеты.]
+			(* <- lang_ru;;	*);;
+		*);
+		...
+		(*
+		-> rrel_example:
+	  		[wellness risks* is a oriented binary relation that links a diet to sc-link that contains the content of the wellness risks.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+        {
+            binary_relation;
+			oriented_relation;
+            concept_diet;
+			concept_risk;
+			sc_link
+        };;
+    *);;

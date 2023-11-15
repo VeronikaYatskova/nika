@@ -1,0 +1,38 @@
+concept_risk
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[риск]
+	(* <- lang_ru;; *);
+	[risk]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (риск)]
+        (* <- lang_ru;; *);
+        [Def. (risk)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [.]
+                    (* 
+                        <- lang_ru;;
+                        <= nrel_definition: concept_risk;; 
+                    *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+                {
+                    concept_diet
+                };;
+    *);;

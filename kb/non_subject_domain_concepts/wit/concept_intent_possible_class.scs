@@ -36,4 +36,10 @@ concept_intent_possible_class
 -> concept_message_about_weather;
 -> concept_message_about_find_word_by_first_letter;
 -> concept_message_about_lab_work_deadline;
--> concept_message_about_skill;;
+-> concept_message_about_skill;
+-> concept_message_about_diet_duration;
+-> concept_message_about_diet_products;
+-> concept_message_about_diet_rate;
+-> concept_message_about_diet_results_time;
+-> concept_message_about_diet_rules;
+-> concept_message_about_diet_risk_value;;

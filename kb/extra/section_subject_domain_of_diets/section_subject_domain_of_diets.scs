@@ -28,7 +28,11 @@ subject_domain_of_diets
     nrel_popularity;
     nrel_proteins;
     nrel_rules;
-    
+    nrel_products;
+    nrel_rating;
+    nrel_results;
+    nrel_risk;
+
     rrel_components;
     rrel_awards;
     
@@ -39,6 +43,8 @@ subject_domain_of_diets
     concept_pca_diet;
     concept_protein_diet;
     concept_separate_nutrition_diet;
+    concept_rating;
+    concept_risk;
 
     concept_component;
     concept_carbhohydrates;
@@ -154,10 +160,19 @@ rrel_key_sc_element -> (section_subject_domain_of_diets -> subject_domain_of_die
     => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_overweight)
 (*
     <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_rating)
+(*
+    <- rrel_key_sc_element;;
     => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_underweight)
 (*
     <- rrel_key_sc_element;;
     => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_award)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> concept_risk)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_risk)
 (*
     <- rrel_key_sc_element;;
     => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_author)
@@ -181,10 +196,19 @@ rrel_key_sc_element -> (section_subject_domain_of_diets -> subject_domain_of_die
     => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_proteins)
 (*
     <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_products)
+(*
+    <- rrel_key_sc_element;;
     => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_rules)
 (*
     <- rrel_key_sc_element;;
     => nrel_key_sc_element_order: (subject_domain_of_diets -> rrel_awards)
 (*
     <- rrel_key_sc_element;;
-*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_rating)
+(*
+    <- rrel_key_sc_element;;
+    => nrel_key_sc_element_order: (subject_domain_of_diets -> nrel_results)
+(*
+    <- rrel_key_sc_element;;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;

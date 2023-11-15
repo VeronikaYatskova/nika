@@ -1,0 +1,36 @@
+concept_message_about_diet_duration
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение о продолжительности диеты]
+	(* <- lang_ru;; *);
+	[message about a diet duration]
+	(* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_diet_duration];
+<- rrel_key_sc_element:
+	...
+	(*
+        => nrel_main_idtf:
+        [Опр. (сообщение о продолжительности диеты)]
+        (* <- lang_ru;; *);
+        [Def. (message about a diet duration)]
+        (* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Cообщение о продолжительности диеты - атомарное сообщение, в котором говорится о продолжительности диеты.]
+                    (* <- lang_ru;; *);;
+            *);
+            ...
+            (*
+                -> rrel_example:
+                    [Message about a diet duration is an atomic message that tells about the duration of a diet.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_diet
+            };;
+	    *);;

@@ -1,6 +1,6 @@
 {
     "name": "about_diet_rules",
     "entities": [
-        "rrel_entities:rrel_entities"
+        "rrel_entity:rrel_entity"
     ]
 }
